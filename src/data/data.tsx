@@ -11,8 +11,6 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Arjun Singh',
+  description: "Portfolio Website",
 };
 
 /**
@@ -69,24 +67,21 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Arjun Singh.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+      Toronto-based <strong className="text-stone-100">Cloud & DevOps Enthusiast</strong>, with AWS certifications <strong className="text-stone-100">passionate about building scalable, automated cloud solutions.</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        "Beyond tech, I enjoy playing <strong className="text-stone-100"> Football,Cricket</strong>,
+        and learn about the<strong className="text-stone-100"> latest tech trends."</strong>
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/Arjun_Singh_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +99,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a Cloud & DevOps Engineer with a strong foundation in AWS, automation, and cloud infrastructure. With hands-on experience in CI/CD, networking, and security, I enjoy designing scalable, efficient, and resilient cloud solutions.
+I have a background in VoIP engineering and networking, which gives me a deep understanding of system reliability, troubleshooting, and performance optimization. I'm passionate about learning new technologies, staying up-to-date with the latest trends in cloud computing, DevOps, and security best practices.
+Outside of work, you'll find me watching football and cricket or exploring the latest advancements in the tech industry. 🚀`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Toronto, ON', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Football, Cricket, Trading', Icon: SparklesIcon},
+    {label: 'Study', text: 'Centennial College', Icon: AcademicCapIcon},
+   /* {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},*/
   ],
 };
 
@@ -122,70 +117,91 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Cloud Platforms',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'AWS',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'Azure',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Google Cloud Platform (GCP)',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'DevOps Tools',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Docker',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Kubernetes',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Jenkins',
+        level: 6,
+      },
+      {
+        name: 'Terraform',
+        level: 7,
+      },
+      {
+        name: 'Ansible',
+        level: 6,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Programming & Scripting',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Python',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Bash/Shell',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Monitoring & Logging',
+    skills: [
+      {
+        name: 'Prometheus',
+        level: 6,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Grafana',
+        level: 6,
+      },
+      {
+        name: 'CloudWatch',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Networking & Security',
+    skills: [
+      {
+        name: 'Cisco Routing & Switching',
+        level: 8,
+      },
+      {
+        name: 'Wireshark',
+        level: 6,
+      },
+      {
+        name: 'IAM (Identity and Access Management)',
+        level: 7,
       },
     ],
   },
@@ -196,45 +212,45 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'LIFT-AND-SHIFT',
+    description: 'AWS infrastructure, automation, and scalable app deployment',
+    url: 'https://github.com/ARJUN3107-OPS/LIFT-AND-SHIFT-APPLICATION-WORKLOAD.',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'ACCESS S3 FROM A VPC',
+    description: 'Integration of Amazon VPC and S3 using an EC2 instance',
+    url: 'https://github.com/ARJUN3107-OPS/Access-S3-from-a-VPC',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'AWS Cloud Re-Architecture',
+    description: 'Re-architect the existing VPROFILE multi-tier web application stack on AWS',
+    url: 'https://github.com/ARJUN3107-OPS/AWS-Cloud-Re-Architecture',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Aurora Database with EC2',
+    description: 'Set up and connect an Amazon Aurora relational database to an EC2 instance',
+    url: 'https://github.com/ARJUN3107-OPS/AWS-DATABASE-PROJECTS/tree/main/Aurora%20Database%20with%20EC2',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Load and Query DynamoDB Tables',
+    description: 'Explore Amazon DynamoDB, create tables, load data, and interact with it using AWS CloudShell and the AWS CLI.',
+    url: 'https://github.com/ARJUN3107-OPS/AWS-DATABASE-PROJECTS/tree/main/Query%20Data%20with%20DynamoDB',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Cloud Security with AWS IAM',
+    description: 'AWS IAM to secure AWS resources by managing user access, roles, policies, and permissions.',
+    url: 'https://github.com/ARJUN3107-OPS/Cloud-Security-with-AWS-IAM',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'DEVOPS',
+    description: 'DEVOPS PROJECTS',
+    url: 'https://github.com/ARJUN3107-OPS/DEVOPS',
     image: porfolioImage7,
   },
   {
@@ -268,39 +284,33 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2024',
+    location: 'Centennial College',
+    title: 'Computer Systems Technology - Networking',
+    content: <p>During my time in the Computer Systems Technology - Networking program, I gained a strong understanding of computer networks, protocols, and security practices. I developed hands-on experience with a range of technologies, including routing and switching, network design, and virtualization. I acquired valuable skills in troubleshooting network issues, configuring routers and switches, and working with various operating systems. This foundation has greatly enhanced my ability to design and manage scalable, secure network architectures in cloud and DevOps environments.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2019',
+    location: 'BBDIT, India',
+    title: 'Computer Science Engineering',
+    content: <p>Throughout my Bachelor’s in Computer Science Engineering, I gained a deep understanding of core computer science concepts such as data structures, algorithms, software engineering, and database management systems. I also explored various programming languages, including Python, C++, and Java, which helped me strengthen my problem-solving abilities. Additionally, I learned about operating systems, computer networks, and software development methodologies, all of which contributed to building a solid foundation for my career in cloud computing and DevOps. This education laid the groundwork for my skills in systems design, automation, and cloud architecture.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Feb 2020 - Dec 2022',
+    location: 'NTT Data Services',
+    title: 'VoIP Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+         As a VoIP Engineer at NTT Data Services, I played a key role in maintaining and optimizing Cisco IPT systems, 
+      ensuring a 99.9% service availability for enterprise clients. I led a team of 4 L1 engineers, providing expert 
+      guidance and support to enhance network reliability and minimize service disruptions by 30%. My responsibilities 
+      included configuring CUCM features such as Extension Mobility, Hunt Groups, and Route Plans, improving user 
+      communication efficiency for over 3,000 users. Additionally, I collaborated with third-party vendors to troubleshoot 
+      network issues, reducing downtime and boosting operational efficiency. This role strengthened my expertise in VoIP, 
+      network security, and system reliability—skills that seamlessly transition into cloud and DevOps environments.
       </p>
     ),
   },
@@ -336,27 +346,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out job opportunities, or just to chat about cloud computing, DevOps, and emerging technologies. I’m always open to connecting and discussing new ideas!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'aju.singh3107@gmail.com',
+      href: 'mailto:aju.singh3107@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Toronto ON, Canada',
+      href: 'https://www.google.com/maps/place/Toronto,+ON/@43.7182412,-79.3780581,11z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843!16zL20vMGg3aDY?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@arjun_singh04',
+      href: 'https://www.instagram.com/arjun_singh04/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ARJUN3107-OPS',
+      href: 'https://github.com/ARJUN3107-OPS',
     },
   ],
 };
@@ -365,9 +375,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ARJUN3107-OPS'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/arjunsingh3107/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/arjun_singh04/'},
 ];
