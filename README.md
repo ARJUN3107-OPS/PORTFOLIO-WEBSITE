@@ -1,7 +1,7 @@
 # React JS Resume Website Template
 
-(https://github.com/user-attachments/assets/c11ac7a9-f899-44dd-88ee-d8a1a606ffa8)
-?raw=true 'ReactJS Resume Website Template')
+![image](https://github.com/user-attachments/assets/64c97ded-d772-41e8-b346-eb4e78d4b7f9)
+
 
 <div align="center">
 
